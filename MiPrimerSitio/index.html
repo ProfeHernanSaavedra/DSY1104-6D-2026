@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venta de Café</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
@@ -19,26 +20,30 @@
     </header>
 
     <main>
-        <section id="inicio">
-            <h2>Un buen café te cambia el día</h2>
-            <p>Disfruta café de especialidad y productos recien preparados</p>
-            <a href="#productos">Ver Productos</a>
+        <section id="inicio" class="hero">
+            <div>
+                <p class="etiqueta">Café de especialidad</p>
+                <h2>Un buen café te cambia el día</h2>
+                <p>Disfruta café de especialidad y productos recien preparados</p>
+                <a class="boton" href="#productos">Ver Productos</a>
+            </div>
         </section>
 
         <section id="productos">
             <h2>Nuestros Productos</h2>
-            
-            <article>
-                <h3>Cafe latte</h3>
-                <p>Espresso acompañado de leche cremosa</p>
-                <p>$2.990</p>
-            </article>
+            <div class="productos">
+                <article class="tarjeta">
+                    <h3>Cafe latte</h3>
+                    <p>Espresso acompañado de leche cremosa</p>
+                    <p class="precio">$2.990</p>
+                </article>
 
-            <article>
-                <h3>Capuchino</h3>
-                <p>Café Espresso, leche y espuma</p>
-                <p>$3.200</p>
-            </article>
+                <article class="tarjeta">
+                    <h3>Capuchino</h3>
+                    <p>Café Espresso, leche y espuma</p>
+                    <p class="precio">$3.200</p>
+                </article>
+            </div>
         </section>
     </main>
     

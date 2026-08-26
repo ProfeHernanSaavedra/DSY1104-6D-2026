@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venta de Café</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="js/app.js" defer></script>
+    
 </head>
 <body>
     <header>
-        <h1>Café Tu DUOC</h1>
+        <h1 id="titulo-sitio">Café Tu DUOC</h1>
         <img src="imagenes/Cafe_imagen.jpg" alt="Taza de Café" width="250" height="150">
         <!-- abreviatura de comentarios , ctr + } -->
         <nav>
@@ -17,6 +23,17 @@
             <a href="#contacto">Contacto</a>
             <a href="http://www.duoc.cl"  target="_blank">Pagina de DUOC</a>
         </nav>
+        <button id="boton-bienvenida" class="btn btn-primary">
+            Mostrar Bienvenida
+        </button>
+        <p id="mensaje-bienvenida" class="mt-3"></p>
+
+        <div class="text-white">
+            Productos seleccionados:
+            <span id="contador-productos" class="badge bg-primary" >0</span>
+            <p id="ultimo-producto" class="mt-3 text-success fw-bold" ></p>
+        </div>
+
     </header>
 
     <main>
@@ -36,21 +53,44 @@
                     <h3>Cafe latte</h3>
                     <p>Espresso acompañado de leche cremosa</p>
                     <p class="precio">$2.990</p>
+                    <button class="btn btn-outline-primary boton-agregar"
+                            data-producto = "Café Latte"
+                        >
+                        Agregar
+                    </button>
                 </article>
 
                 <article class="tarjeta">
                     <h3>Capuchino</h3>
                     <p>Café Espresso, leche y espuma</p>
                     <p class="precio">$3.200</p>
+                    <button class="btn btn-outline-primary boton-agregar"
+                            data-producto="Capuchino"
+                        >
+                        Agregar
+                    </button>
                 </article>
             </div>
         </section>
+
+        <section class="container py-4">
+            <button id="boton-promocion" class="btn btn-warning">
+                Mostrar Promoción
+            </button>
+
+            <div id="promocion" class="alert alert-success mt-3 d-none">
+                Compra dos cafés y recibe una galleta gratis.
+            </div>
+
+        </section>
+
+
     </main>
     
     <footer id="contacto"> 
         <p>Café Tu DUOC - Viña del Mar</p>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
 

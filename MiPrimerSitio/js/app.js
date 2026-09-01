@@ -52,14 +52,9 @@ botonesAgregar.forEach(function(boton){
     });
 });
 
-
-
-
-
-
-
-
 //console.log(botonesAgregar)
+
+
 
 
 

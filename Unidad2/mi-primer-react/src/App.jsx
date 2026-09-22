@@ -11,9 +11,18 @@ function App(){
 
       <h1>Comprando productos</h1>
       <h2>Tienda React</h2>
-      <Producto />
-      <Producto />
-      <Producto />
+      <Producto 
+        nombre = "Notebook Lenovo"
+        precio = "629.990"
+      />
+      <Producto 
+        nombre = "Monitor DELL"
+        precio = "150.000"
+      />
+      <Producto 
+        nombre = "Mouse Genius"
+        precio = "2.990"
+      />
 
     </div>
   )

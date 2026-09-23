@@ -1,5 +1,6 @@
 import Saludo from './components/Saludo'
 import Producto from './components/Producto'
+import Contador from './components/Contador'
 
 {/** comentarios */}
 
@@ -24,6 +25,7 @@ function App(){
         precio = "2.990"
       />
 
+      <Contador />
     </div>
   )
 }

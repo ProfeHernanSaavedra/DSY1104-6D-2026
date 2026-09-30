@@ -1,6 +1,14 @@
 import Producto from '../components/Producto'
+import { useLocation } from 'react-router-dom'
 
 function Productos() {
+
+
+    const location = useLocation()
+
+    const parametros = new URLSearchParams(location.search)
+
+    const categoria = parametros.get('categoria')
 
     return (
         <div className="container mt-4">
@@ -8,6 +16,10 @@ function Productos() {
             <h1 className="text-center mb-4">
                 Nuestros Productos
             </h1>
+
+            <p>
+                Categoría seleccionada: {categoria}
+            </p>
 
             <div className="row g-4">
 
